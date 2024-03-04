@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,11 +20,94 @@ a {
   width: 86%;
   margin: 0 auto;
 }
-
 /*=================================
   Header styling starts here
 =================================*/
+body {
+  background: rgb(53, 88, 144);
+  background: linear-gradient(
+    45deg,
+    rgba(53, 88, 144, 0.8604691876750701) 40%,
+    rgba(22, 144, 157, 0.9220938375350141) 84%
+  );
+  font-family: "Poppins", sans-serif;
+}
 
+.container {
+  width: 31.3%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 132px;
+  border-top: 7px solid #fff;
+  background: url(/assets/images/pexels-photo-6310660.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 190px;
+}
+
+header .wrapper {
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 0 27px;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-indent: 0;
+  font-family: "FontAwesome";
+  font-size: 22px;
+}
+
+.left-arrow::before {
+  content: "\f177";
+}
+
+.star::before {
+  content: "\f006";
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+header figure {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  float: right;
+}
 /*=================================
   Header styling ends here
 =================================*/
