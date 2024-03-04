@@ -45,7 +45,7 @@ header {
   border-top: 7px solid #fff;
   background: url(/assets/images/pexels-photo-6310660.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 190px;
 }
 
@@ -107,6 +107,24 @@ header figure img {
   height: 100%;
   border-radius: 50%;
   float: right;
+}
+
+.blue-card {
+  background: #eff8fb;
+  padding-top: 83px;
+  padding-bottom: 34px;
+}
+
+.blue-card p {
+  color: #0855aee0;
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+main .wrapper {
+  width: 82%;
 }
 /*=================================
   Header styling ends here
