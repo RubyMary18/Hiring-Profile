@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1350px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*Responsive Design Desktop-first-approach*/
+/*media query for 1440px starts here*/
+@media only screen and (min-width: 1440px) {
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
+}
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+}
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+}
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+}
+
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+}
+
+/*Responsive Design Mobile-first-approach*/
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+}
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+}
+
+/*media query for 995px starts here*/
+@media only screen and (min-width: 995px) {
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
+}
+
+/*media query for 1440px starts here*/
+@media only screen and (min-width: 1440px) {
+}
