@@ -114,7 +114,8 @@ header figure img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  float: right;
+  object-fit: cover;
+  object-position: top;
 }
 
 header figure img:hover {
@@ -177,7 +178,6 @@ main .wrapper {
 .skills-container div p {
   color: #02b5a4;
   font-weight: 500;
-  color: #a7a7a7;
   font-size: 15px;
   margin-bottom: 5px;
 }
@@ -244,6 +244,9 @@ main .wrapper {
 .portfolio img {
   width: 45%;
   height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .about {
@@ -292,50 +295,91 @@ main .wrapper {
 
 /*Responsive Design Desktop-first-approach*/
 /*media query for 1440px starts here*/
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 35%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  header figure {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about p {
+    font-size: 13px;
+  }
+
+  .portfolio img {
+    width: 45%;
+    height: 135px;
+  }
 }
 
 /*media query for 1024px starts here*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .blue-card p {
+    font-size: 13px;
+  }
+
+  .about p {
+    font-size: 12px;
+  }
 }
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-}
+  .container {
+    width: 45%;
+  }
 
-/*media query for 768px starts here*/
-@media only screen and (min-width: 768px) {
-}
+  .tab-buttons li a {
+    font-size: 13px;
+  }
 
-/*media query for 540px starts here*/
-@media only screen and (min-width: 540px) {
-}
+  .skills-container div p {
+    font-size: 14px;
+  }
 
-/*media query for 480px starts here*/
-@media only screen and (min-width: 480px) {
-}
+  .hire-btn {
+    font-size: 16px;
+  }
 
-/*Responsive Design Mobile-first-approach*/
-/*media query for 480px starts here*/
-@media only screen and (min-width: 480px) {
-}
-
-/*media query for 540px starts here*/
-@media only screen and (min-width: 540px) {
+  .portfolio img {
+    height: 130px;
+  }
 }
 
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 60%;
+  }
+
+  .portfolio img {
+    height: 105px;
+  }
 }
 
-/*media query for 995px starts here*/
-@media only screen and (min-width: 995px) {
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  .container {
+    width: 75%;
+  }
+
+  .tab-buttons li {
+    padding: 8px;
+  }
+
+  .hire-btn {
+    font-size: 14px;
+  }
 }
 
-/*media query for 1024px starts here*/
-@media only screen and (min-width: 1024px) {
-}
-
-/*media query for 1440px starts here*/
-@media only screen and (min-width: 1440px) {
+/*media query for 480px starts here*/
+@media only screen and (max-width: 420px) {
+  .container {
+    width: 86%;
+  }
 }
