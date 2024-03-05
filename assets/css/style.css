@@ -38,10 +38,11 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  margin-top: 132px;
+  margin-bottom: 132px;
 }
 
 header {
-  margin-top: 132px;
   border-top: 7px solid #fff;
   background: url(/assets/images/pexels-photo-6310660.jpeg);
   background-size: cover;
@@ -79,6 +80,11 @@ header .wrapper {
   font-size: 22px;
 }
 
+.star:hover,
+.left-arrow:hover {
+  cursor: pointer;
+}
+
 .left-arrow::before {
   content: "\f177";
 }
@@ -95,11 +101,13 @@ h1 {
 }
 
 header figure {
-  width: 145px;
-  height: 145px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  border: 5px solid #64c2da;
+  border-radius: 50%;
 }
 
 header figure img {
@@ -109,13 +117,20 @@ header figure img {
   float: right;
 }
 
+header figure img:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
 .blue-card {
   background: #eff8fb;
   padding-top: 83px;
   padding-bottom: 34px;
+  border-bottom: 2px solid #bdc4d4;
 }
 
-.blue-card p {
+.blue-card p,
+.about p {
   color: #0855aee0;
   font-weight: 500;
   text-align: center;
@@ -123,8 +138,137 @@ header figure img {
   line-height: 1.65;
 }
 
+.about p {
+  color: #8e8686;
+}
+
 main .wrapper {
   width: 82%;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tab-buttons li {
+  padding: 15px;
+}
+
+.tab-buttons li:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.tab-container {
+  background-color: #ffffff;
+}
+
+.skills-container {
+  padding-bottom: 38px;
+}
+
+.skills-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-container div p {
+  color: #02b5a4;
+  font-weight: 500;
+  color: #a7a7a7;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.skills-container div span {
+  width: 100%;
+  position: relative;
+  background: #bfece8;
+  display: inline-block;
+  height: 11px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.skills-container div span::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.skill1 span::before {
+  width: 65.5%;
+  background: linear-gradient(
+    45deg,
+    rgba(57, 81, 139, 1) 52%,
+    rgba(9, 169, 158, 1) 84%
+  );
+}
+
+.skill2 span::before {
+  background: linear-gradient(
+    90deg,
+    rgba(57, 81, 139, 1) 45%,
+    rgba(9, 169, 158, 1) 63%
+  );
+  width: 83.5%;
+}
+
+.skill3 span::before {
+  background: linear-gradient(
+    90deg,
+    rgba(57, 81, 139, 1) 81%,
+    rgba(9, 169, 158, 1) 99%
+  );
+  width: 43%;
+}
+
+.tab-buttons li a {
+  color: #a7a7a7;
+  font-size: 15px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.portfolio img {
+  width: 45%;
+  height: 140px;
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+.hire {
+  background: #02b5a4;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-btn {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  border: none;
+  outline: none;
+  background: #02b5a4;
+  color: #fff;
+}
+
+.hire-btn:hover {
+  cursor: pointer;
 }
 /*=================================
   Header styling ends here
