@@ -272,7 +272,50 @@ main .wrapper {
 
 .hire-btn:hover {
   cursor: pointer;
+  scale: 1.1;
+  letter-spacing: 2px;
 }
+
+.star::before {
+  content: "\f005";
+}
+
+.star.col-btn::before {
+  color: #06d8ed;
+}
+
+.tab-buttons li.active {
+  background-color: #eff8fb;
+}
+
+.tab-buttons li.active a {
+  color: #404e81;
+  font-weight: 500;
+}
+
+.tab-content li {
+  display: none;
+  height: 200px;
+}
+
+.tab-content li.show {
+  display: flex;
+}
+
+.tab-content li.hide {
+  display: none;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.about {
+  margin-bottom: 0;
+}
+
 /*=================================
   Header styling ends here
 =================================*/
