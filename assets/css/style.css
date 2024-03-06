@@ -123,6 +123,14 @@ header figure img:hover {
   scale: 1.1;
 }
 
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
 .blue-card {
   background: #eff8fb;
   padding-top: 83px;
@@ -317,23 +325,7 @@ main .wrapper {
 }
 
 /*=================================
-  Header styling ends here
-=================================*/
-
-/*=================================
-  main styling starts here
-=================================*/
-
-/*=================================
   main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/
-
-/*=================================
-  footer styling ends here
 =================================*/
 
 /*Responsive Design Desktop-first-approach*/
